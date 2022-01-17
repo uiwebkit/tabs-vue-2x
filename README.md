@@ -46,7 +46,7 @@ Vue.config.ignoredElements = [/uni-\w*/];
 #### Next-Gen Customization (with Store)
 
 ```vue
-<uni-store-set path="tab.store" state="1"></uni-store-set>
+<uni-store-set path="tab.store" state="1"/>
 
 <uni-tabs>
   <uni-tab-bar mini>
@@ -59,12 +59,12 @@ Vue.config.ignoredElements = [/uni-\w*/];
     <uni-event-store-set listen="click" path="tab.store" state="1">
       <uni-tab only>
         <uni-tab-content>
-          <uni-tab-icon icons="fa" type="brands" name="font-awesome"></uni-tab-icon>
+          <uni-tab-icon icons="fa" type="brands" name="font-awesome"/>
 
           <uni-tab-text-label>Tab 2</uni-tab-text-label>
 
           <uni-event-store-get path="tab.store" equal="1" prop="active">
-            <uni-tab-indicator></uni-tab-indicator>
+            <uni-tab-indicator/>
           </uni-event-store-get>
         </uni-tab-content>
 
@@ -87,8 +87,8 @@ Vue.config.ignoredElements = [/uni-\w*/];
 #### Next-Gen Customization (with routes)
 
 ```vue
-<uni-router shadow></uni-router>
-<uni-router-link activate params="custom=1"></uni-router-link>
+<uni-router shadow/>
+<uni-router-link activate params="custom=1"/>
 
 <uni-tabs>
   <uni-tab-bar mini>
@@ -102,12 +102,12 @@ Vue.config.ignoredElements = [/uni-\w*/];
       <uni-route params="custom=2" prop="active">
         <uni-tab only>
           <uni-tab-content>
-            <uni-tab-icon icons="fa" type="brands" name="font-awesome"></uni-tab-icon>
+            <uni-tab-icon icons="fa" type="brands" name="font-awesome"/>
 
-            <uni-tab-text-label value="Tab 2"></uni-tab-text-label>
+            <uni-tab-text-label value="Tab 2"/>
 
             <uni-route params="custom=2" prop="active">
-              <uni-tab-indicator></uni-tab-indicator>
+              <uni-tab-indicator/>
             </uni-route>
           </uni-tab-content>
 
